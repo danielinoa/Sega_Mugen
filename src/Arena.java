@@ -11,10 +11,10 @@ public class Arena {
 	private int width, height;
 	private AudioClip arenaMusic, am1, am2, am3;
 	private URL url1;
-	private Image scArena = Toolkit.getDefaultToolkit().getImage("sc_arena.jpg");
-	private Image mkArena = Toolkit.getDefaultToolkit().getImage("mk_arena.jpg");
-	private Image beachArena = Toolkit.getDefaultToolkit().getImage("b_arena.jpg"); 
-	private Image arena = Toolkit.getDefaultToolkit().getImage("Arena.gif");
+	private Image scArena = Toolkit.getDefaultToolkit().getImage("resources/sc_arena.jpg");
+	private Image mkArena = Toolkit.getDefaultToolkit().getImage("resources/mk_arena.jpg");
+	private Image beachArena = Toolkit.getDefaultToolkit().getImage("resources/b_arena.jpg"); 
+	private Image arena = Toolkit.getDefaultToolkit().getImage("resources/Arena.gif");
 
 	/**
 	 * Constructor sets dimension of the arena
@@ -47,7 +47,7 @@ public class Arena {
 	 */
 	public void loadArenaMusic0(){
 		try {
-			url1 = new URL ("file", "localhost", "mkArenaMusic.wav");
+			url1 = new URL ("file", "localhost", "resources/mkArenaMusic.wav");
 			arenaMusic = JApplet.newAudioClip(url1);
 			arenaMusic.loop();
 		} catch (MalformedURLException e) {
@@ -59,7 +59,7 @@ public class Arena {
 	 */
 	public void loadArenaMusic1(){
 		try {
-			url1 = new URL ("file", "localhost", "scArenaMusic.wav");
+			url1 = new URL ("file", "localhost", "resources/scArenaMusic.wav");
 			arenaMusic = JApplet.newAudioClip(url1);
 			arenaMusic.loop();
 		} catch (MalformedURLException e) {
@@ -71,7 +71,7 @@ public class Arena {
 	 */
 	public void loadArenaMusic2(){
 		try {
-			url1 = new URL ("file", "localhost", "beachArenaMusic.wav");
+			url1 = new URL ("file", "localhost", "resources/beachArenaMusic.wav");
 			arenaMusic = JApplet.newAudioClip(url1);
 			arenaMusic.loop();
 		} catch (MalformedURLException e) {
@@ -83,7 +83,7 @@ public class Arena {
 	 */
 	public void loadArenaMusic3(){
 		try {
-			url1 = new URL ("file", "localhost", "arenaMusic1.wav");
+			url1 = new URL ("file", "localhost", "resources/arenaMusic1.wav");
 			arenaMusic = JApplet.newAudioClip(url1);
 			arenaMusic.loop();
 		} catch (MalformedURLException e) {

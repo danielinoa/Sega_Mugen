@@ -29,9 +29,9 @@ public class Main extends JPanel implements MouseListener, KeyListener, MouseMot
 	private Thread th = new Thread();
 	private AudioClip backgroundMusic;
 	private boolean fightingMusicPlaying = false;
-	private Image knucklesWins = Toolkit.getDefaultToolkit().getImage("knucklesWins.png"); 
-	private Image sonicWins = Toolkit.getDefaultToolkit().getImage("sonicWins.png"); 
-	private Image SEGA = Toolkit.getDefaultToolkit().getImage("segaMugen.png");
+	private Image knucklesWins = Toolkit.getDefaultToolkit().getImage("resources/knucklesWins.png"); 
+	private Image sonicWins = Toolkit.getDefaultToolkit().getImage("resources/sonicWins.png"); 
+	private Image SEGA = Toolkit.getDefaultToolkit().getImage("resources/segaMugen.png");
 	private boolean intro=true;
 
 	// Runner
@@ -276,7 +276,7 @@ public class Main extends JPanel implements MouseListener, KeyListener, MouseMot
 	public void loadMenuMusic(){
 		if(menu.isVisible()){
 			try{
-				url = new URL ("file", "localhost", "Menu.wav");
+				url = new URL ("file", "localhost", "resources/Menu.wav");
 				backgroundMusic = JApplet.newAudioClip(url);
 				backgroundMusic.loop();
 			}catch(Exception e){
